@@ -1,18 +1,20 @@
-import React from "react"
-import { Location } from './Location'
+import React, { Component } from "react"
+import './style.css'
 import soleil from '../../img/ensoleille.png'
+import { Container, City, Country, Temp, Condition, Icon } from './style'
 
-const WeatherCard = (props) => {
-    return ( 
-        <div>
-            <div>Weater Card</div>
-            <Location />
-            <img className="icon" src={soleil} alt="Weather Icon"/>
-            <h1 className="temp">20 °c</h1>
-            <h3>Cloudy</h3>
-        </div>
-
+class WeatherCard extends Component{
+    render(){
+    return (         
+            <Container>
+                <City />
+                <Country />
+                <Icon src={soleil} />
+                <Temp />
+                <Condition />
+            </Container>
      );
+    }
 }
  
 export default WeatherCard;

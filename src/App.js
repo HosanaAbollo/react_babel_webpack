@@ -4,7 +4,7 @@ import WeatherCard from './components/WeatherCard/component'
 class App extends Component {
     render(){
         return(
-            <div>
+            <div className="App">
                 <h1>React manually basic configuration</h1>
                 <WeatherCard />
             </div>

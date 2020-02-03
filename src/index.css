@@ -1,0 +1,13 @@
+/* Initialisation à 0 des éléments du DOM */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .App{
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
